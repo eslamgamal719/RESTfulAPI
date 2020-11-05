@@ -14,12 +14,13 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class SellerProductController extends ApiController
 {
+
     public function __construct()
     {
         parent::__construct();
-
         $this->middleware('transform.input:' . ProductTransformer::class)->only(['store', 'update']);
     }
+
 
     public function index(Seller $seller)
     {
@@ -28,7 +29,6 @@ class SellerProductController extends ApiController
         return $this->showAll($products);
 
     }//end of index
-
 
 
     public function store(Request $request, User $seller)

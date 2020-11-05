@@ -10,11 +10,17 @@ use App\Http\Controllers\ApiController;
 class BuyerProductController extends ApiController
 {
 
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+
     public function index(Buyer $buyer)
     {
         $products = $buyer->transactions()->with('product')
-            ->get()                        //to get collection of transactions with product for each one
-            ->pluck('product');      //to get product field only from each transaction and ignore the others
+            ->get()
+            ->pluck('product');
 
         return $this->showAll($products);
     }

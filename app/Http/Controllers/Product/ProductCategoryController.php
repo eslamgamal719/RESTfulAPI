@@ -9,6 +9,12 @@ use App\Http\Controllers\ApiController;
 
 class ProductCategoryController extends ApiController
 {
+    public function __construct()
+    {
+        $this->middleware('auth:api')->except(['index']);
+        $this->middleware('client.credentials')->only(['index']);
+    }
+
 
     public function index(Product $product)
     {
@@ -20,7 +26,6 @@ class ProductCategoryController extends ApiController
 
 
 
-
     public function update(Request $request, Product $product, Category $category)
     {
         $product->categories()->syncWithoutDetaching([$category->id]);
@@ -28,7 +33,6 @@ class ProductCategoryController extends ApiController
         return $this->showAll($product->categories);
 
     }//end of update
-
 
 
 

@@ -9,6 +9,12 @@ use App\Http\Controllers\ApiController;
 class CategoryTransactionController extends ApiController
 {
 
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+
     public function index(Category $category)
     {
         $transactions = $category->products()

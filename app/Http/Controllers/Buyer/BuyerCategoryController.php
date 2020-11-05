@@ -9,6 +9,11 @@ use App\Http\Controllers\ApiController;
 class BuyerCategoryController extends ApiController
 {
 
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     public function index(Buyer $buyer)
     {
         $sellers = $buyer->transactions()

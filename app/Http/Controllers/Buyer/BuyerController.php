@@ -9,6 +9,11 @@ use App\Http\Controllers\ApiController;
 class BuyerController extends ApiController
 {
 
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
 
     public function index()
     {
@@ -16,7 +21,6 @@ class BuyerController extends ApiController
 
         return $this->showAll($buyers);
     }
-
 
 
     public function show(Buyer $buyer)
