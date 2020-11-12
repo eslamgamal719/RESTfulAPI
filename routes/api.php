@@ -59,8 +59,9 @@ Route::resource('transactions.categories', 'Transaction\TransactionCategoryContr
 
 //Users
 Route::resource('users', 'User\UserController')->except(['create', 'edit']);
-Route::get('users/verify/{token}', 'User\UserController@verify')->name('verify');
 Route::get('users/{user}/resend', 'User\UserController@resend')->name('resend');
+Route::get('users/verify/{token}', 'User\UserController@verify')->name('verify');
+
 
 Route::post('oauth/token', '\Laravel\Passport\Http\Controllers\AccessTokenController@issueToken');
 
