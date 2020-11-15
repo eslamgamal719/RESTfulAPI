@@ -119,6 +119,14 @@ class UserController extends ApiController
     }//end of destroy
 
 
+    public function me(Request $request)
+    {
+        $user = $request->user();
+
+        return $this->showOne($user);
+    }
+
+
     public function verify($token)
     {
         $user = User::where('verification_token', $token)->firstOrFail();

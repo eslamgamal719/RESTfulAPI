@@ -58,6 +58,7 @@ Route::resource('transactions.categories', 'Transaction\TransactionCategoryContr
 
 
 //Users
+Route::get('users/me', 'User\UserController@me')->name('me');
 Route::resource('users', 'User\UserController')->except(['create', 'edit']);
 Route::get('users/{user}/resend', 'User\UserController@resend')->name('resend');
 Route::get('users/verify/{token}', 'User\UserController@verify')->name('verify');
