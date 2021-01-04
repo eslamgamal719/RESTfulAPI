@@ -6,7 +6,7 @@ namespace App\Traits;
 trait AdminActions
 {
 
-    public function before($user, $ability) {
+    public function before($user) {
         if($user->isAdmin()) {
             return true;
         }

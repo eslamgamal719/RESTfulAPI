@@ -3,9 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="a5a6a34c-4187-493e-a64b-eedfdf8927d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Buyer/BuyerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Buyer/BuyerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Buyer/BuyerTransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Buyer/BuyerTransactionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductBuyerTransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductBuyerTransactionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerTransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerTransactionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Transaction/TransactionSellerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Transaction/TransactionSellerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/BuyerPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/BuyerPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ProductPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ProductPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/SellerPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/SellerPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/TransactionPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/TransactionPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Traits/AdminActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/AdminActions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +147,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NewsSite" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -197,7 +209,22 @@
       <workItem from="1605189438859" duration="36000" />
       <workItem from="1605286888246" duration="1740000" />
       <workItem from="1605306916726" duration="33000" />
-      <workItem from="1605455736508" duration="685000" />
+      <workItem from="1605455736508" duration="1893000" />
+      <workItem from="1605629404655" duration="2939000" />
+      <workItem from="1605685662130" duration="68000" />
+      <workItem from="1605720100819" duration="1966000" />
+      <workItem from="1605774849933" duration="616000" />
+      <workItem from="1605859816096" duration="2602000" />
+      <workItem from="1605870748123" duration="603000" />
+      <workItem from="1605958835317" duration="6724000" />
+      <workItem from="1605983536863" duration="97000" />
+      <workItem from="1606072738353" duration="2843000" />
+      <workItem from="1606119982918" duration="846000" />
+      <workItem from="1606289829334" duration="5469000" />
+      <workItem from="1606380088012" duration="3721000" />
+      <workItem from="1606387012203" duration="810000" />
+      <workItem from="1606464683215" duration="3175000" />
+      <workItem from="1606811984587" duration="3894000" />
     </task>
     <servers />
   </component>

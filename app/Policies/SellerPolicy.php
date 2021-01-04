@@ -2,25 +2,16 @@
 
 namespace App\Policies;
 
-use App\Traits\AdminActions;
 use App\User;
 use App\Seller;
+use App\Traits\AdminActions;
 use Illuminate\Auth\Access\HandlesAuthorization;
+
 
 class SellerPolicy
 {
     use HandlesAuthorization, AdminActions;
 
-    /**
-     * Determine whether the user can view any sellers.
-     *
-     * @param  \App\User  $user
-     * @return mixed
-     */
-    public function viewAny(User $user)
-    {
-        //
-    }
 
     /**
      * Determine whether the user can view the seller.

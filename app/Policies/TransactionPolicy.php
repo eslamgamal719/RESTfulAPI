@@ -2,10 +2,11 @@
 
 namespace App\Policies;
 
-use App\Traits\AdminActions;
-use App\Transaction;
 use App\User;
+use App\Transaction;
+use App\Traits\AdminActions;
 use Illuminate\Auth\Access\HandlesAuthorization;
+
 
 class TransactionPolicy
 {

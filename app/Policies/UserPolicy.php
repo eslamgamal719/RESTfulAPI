@@ -2,9 +2,10 @@
 
 namespace App\Policies;
 
-use App\Traits\AdminActions;
 use App\User;
+use App\Traits\AdminActions;
 use Illuminate\Auth\Access\HandlesAuthorization;
+
 
 class UserPolicy
 {
@@ -42,27 +43,6 @@ class UserPolicy
         return $user->id === $model->id && $user->token()->client->personal_access_client;
     }
 
-    /**
-     * Determine whether the user can restore the model.
-     *
-     * @param  \App\User  $user
-     * @param  \App\User  $model
-     * @return mixed
-     */
-    public function restore(User $user, User $model)
-    {
-        //
-    }
 
-    /**
-     * Determine whether the user can permanently delete the model.
-     *
-     * @param  \App\User  $user
-     * @param  \App\User  $model
-     * @return mixed
-     */
-    public function forceDelete(User $user, User $model)
-    {
-        //
-    }
+
 }

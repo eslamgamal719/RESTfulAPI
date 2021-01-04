@@ -2,18 +2,18 @@
 
 namespace App\Providers;
 
-use App\Buyer;
-use App\Policies\ProductPolicy;
-use App\Policies\TransactionPolicy;
-use App\Policies\UserPolicy;
-use App\Product;
-use App\Seller;
-use App\Transaction;
 use App\User;
+use App\Buyer;
+use App\Seller;
+use App\Product;
 use Carbon\Carbon;
+use App\Transaction;
+use App\Policies\UserPolicy;
 use App\Policies\BuyerPolicy;
 use App\Policies\SellerPolicy;
 use Laravel\Passport\Passport;
+use App\Policies\ProductPolicy;
+use App\Policies\TransactionPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 

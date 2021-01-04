@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Product;
 
-use App\Transformers\TransactionTransformer;
 use App\User;
 use App\Product;
 use App\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\ApiController;
+use App\Transformers\TransactionTransformer;
+
 
 
 class ProductBuyerTransactionController extends ApiController
@@ -31,7 +32,6 @@ class ProductBuyerTransactionController extends ApiController
         ];
 
         $this->validate($request, $rules);
-
 
          if($buyer->id == $product->seller->id) {
              return $this->errorResponse('The buyer must be different from the seller', 409);
